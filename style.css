@@ -20,10 +20,12 @@
   padding: 10px;
   background-color: #ff5252;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .cover h1 span {
   color: white;
+  padding-right: 5px;
 }
 
 .cover p {
