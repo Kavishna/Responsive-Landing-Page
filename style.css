@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main {
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  background-image: url(./images/pexels-gabriel-peter-696680.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.cover > h1 {
+  color: #283850;
+  padding: 10px;
+  background-color: #ff5252;
+  text-align: center;
+}
+
+.cover h1 span {
+  color: white;
+}
+
+.cover p {
+  margin: 5% 25%;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #ff5252;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: #283850;
+}
+
+.nav-links {
+  width: 50%;
+  min-width: 400px;
+}
+
+.logo > h2 {
+  text-transform: lowercase;
+  color: #d1d8e0;
+  letter-spacing: 4px;
+}
+
+h2 > span {
+  text-transform: uppercase;
+  color: #ff5252;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #d1d8e0;
+}
+.nav-links a:hover {
+  transition-duration: 300ms;
+  color: #ff5252;
+}
+
+/* hamburger menu */
+.line {
+  height: 3px;
+  width: 30px;
+  background-color: #d1d8e0;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.burger {
+  display: none;
+}
+
+/* styling button */
+li > button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid #ff5252;
+  background-color: transparent;
+  color: #ff5252;
+  transition-duration: 300ms;
+}
+li > button:hover {
+  color: #283850;
+  background-color: #ff5252;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  li > button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  nav {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .logo > h2 {
+    font-size: 16px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    background-color: #283850;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 10vh;
+    width: 100%;
+    height: 90vh;
+    transform: translateY(-150%);
+    transition: ease-in-out 0.5s transform;
+    z-index: -1;
+  }
+
+  nav {
+    height: 80%;
+    margin: auto;
+  }
+
+  .nav-links-active {
+    transition: ease-in-out 0.5s transform;
+    transform: translateY(0%);
+    z-index: -1;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+  }
+}
