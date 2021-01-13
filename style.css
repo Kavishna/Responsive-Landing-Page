@@ -44,11 +44,12 @@
 }
 
 .cover button {
-  padding: 10px 20px;
+  padding: 13px 26px;
   margin: 0 10px;
   border: none;
   background-color: #ff5252;
   color: #ffffff;
+  font-size: 20px;
 }
 
 header {
